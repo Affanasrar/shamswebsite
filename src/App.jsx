@@ -10,6 +10,7 @@ import About from './pages/About';
 import Courses from './pages/Courses';
 import Events from './pages/Events';
 import Admission from './pages/Admission';
+import Admin from './pages/Admin';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/courses" element={<Courses />} />
             <Route path="/events" element={<Events />} />
             <Route path="/admission" element={<Admission />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </main>
         <Footer />
