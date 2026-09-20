@@ -49,25 +49,52 @@ export default function Admission() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate database transmission preparation
-    setTimeout(() => {
-      const applicationRef = 'SCI-' + Math.floor(100000 + Math.random() * 900000);
-      const submissionRecord = {
-        ...formData,
-        applicationId: applicationRef,
-        submittedAt: new Date().toISOString(),
-        status: 'Pending Verification'
-      };
+    const applicationRef = 'SCI-' + Math.floor(100000 + Math.random() * 900000);
+    const submissionRecord = {
+      ...formData,
+      applicationId: applicationRef,
+      submittedAt: new Date().toISOString(),
+      status: 'Pending Verification'
+    };
 
-      console.log('Neon DB Ready Payload:', submissionRecord);
-      setSubmittedData(submissionRecord);
+    try {
+      const response = await fetch('/api/admissions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(submissionRecord)
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmittedData({
+          ...submissionRecord,
+          applicationId: result.applicationId || applicationRef,
+          isLiveDb: true
+        });
+      } else {
+        console.info('API notice:', result);
+        setSubmittedData({
+          ...submissionRecord,
+          isLiveDb: false,
+          apiMessage: result.error || 'Local preview mode'
+        });
+      }
+    } catch (err) {
+      console.info('Client-side fallback:', err);
+      setSubmittedData({
+        ...submissionRecord,
+        isLiveDb: false,
+        apiMessage: 'Local preview mode (Vercel Serverless Function will connect to Neon PostgreSQL in production).'
+      });
+    } finally {
       setIsSubmitting(false);
       window.scrollTo({ top: 100, behavior: 'smooth' });
-    }, 600);
+    }
   };
 
   const neonSchemaSQL = `-- Neon Serverless PostgreSQL Table Definition
