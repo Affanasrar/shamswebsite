@@ -4,8 +4,15 @@ import {
   Sparkles, Trophy, Mic, ShieldCheck, MapPin, ArrowRight 
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import awardCeremonyImg from '../assets/award-ceremony.jpg';
+import awardCeremonyImg from '../assets/gallery-7.jpg';
 import campusLabImg from '../assets/campus-lab.jpg';
+import gallery1 from '../assets/gallery-1.jpg';
+import gallery2 from '../assets/gallery-2.jpg';
+import gallery3 from '../assets/gallery-3.jpg';
+import gallery4 from '../assets/gallery-4.jpg';
+import gallery5 from '../assets/gallery-5.jpg';
+import gallery6 from '../assets/gallery-6.jpg';
+import gallery7 from '../assets/gallery-7.jpg';
 
 export default function Events() {
   const eventsList = [
@@ -178,6 +185,49 @@ export default function Events() {
               <Link to="/courses" className="btn btn-outline">
                 <span>View Our Courses</span>
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Event Photo Gallery */}
+      <section className="section-photo-gallery">
+        <div className="container">
+          <div className="section-header text-center">
+            <span className="section-subtitle">MOMENTS OF PRIDE</span>
+            <h2 className="section-title">Event Photo Gallery</h2>
+            <p className="section-desc">
+              Glimpses from our recent Excellence Award Ceremony and Independence Day celebrations.
+            </p>
+          </div>
+
+          <div className="photo-gallery-grid">
+            <div className="gallery-item">
+              <img src={gallery1} alt="Independence Day Celebration" className="gallery-img" />
+              <div className="gallery-caption">Independence Day Celebration</div>
+            </div>
+            <div className="gallery-item">
+              <img src={gallery2} alt="Excellence Award Presentation" className="gallery-img" />
+              <div className="gallery-caption">Excellence Award Presentation</div>
+            </div>
+            <div className="gallery-item">
+              <img src={gallery3} alt="Excellence Award Presentation" className="gallery-img" />
+              <div className="gallery-caption">Excellence Award Presentation</div>
+            </div>
+            <div className="gallery-item">
+              <img src={gallery4} alt="Excellence Award Presentation" className="gallery-img" />
+              <div className="gallery-caption">Excellence Award Presentation</div>
+            </div>
+            <div className="gallery-item">
+              <img src={gallery5} alt="Excellence Award Presentation" className="gallery-img" />
+              <div className="gallery-caption">Excellence Award Presentation</div>
+            </div>
+            <div className="gallery-item">
+              <img src={gallery6} alt="Excellence Award Presentation" className="gallery-img" />
+              <div className="gallery-caption">Excellence Award Presentation</div>
+            </div>
+            <div className="gallery-item gallery-item-wide">
+              <img src={gallery7} alt="Excellence Award Winners Group Photo" className="gallery-img" />
+              <div className="gallery-caption">Award Winners Group Photo</div>
             </div>
           </div>
         </div>

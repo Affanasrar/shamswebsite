@@ -60,7 +60,7 @@ export default function About() {
                 Founded with a steadfast commitment to educational empowerment, <strong>Shams Commercial Institute</strong> has spent half a century guiding students from foundational secondary school academics to advanced technical and professional competence.
               </p>
               <p className="story-paragraph">
-                Located at Al Burhan Arcade, Shoe Market, Nishtar Road in Karachi, we are celebrated for our disciplined environment, experienced faculty, and consistent production of Karachi Board position holders. 
+                Located at 27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi, we are celebrated for our disciplined environment, experienced faculty, and consistent production of Karachi Board position holders. 
               </p>
               <p className="story-paragraph">
                 As the modern world transitions into the digital and artificial intelligence era, Shams Institute has evolved in tandem—combining traditional academic coaching with cutting-edge IT courses, graphic design, and web development.
@@ -181,7 +181,7 @@ export default function About() {
           <div className="facilities-grid">
             <div className="facility-card">
               <div className="facility-icon"><BookOpen size={24} /></div>
-              <h4>Air-Conditioned Classrooms</h4>
+              <h4>Well-Ventilated Classrooms</h4>
               <p>Ergonomic seating with modern whiteboards and audio-visual instructional aids.</p>
             </div>
             <div className="facility-card">

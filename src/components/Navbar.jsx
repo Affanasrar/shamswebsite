@@ -21,18 +21,18 @@ export default function Navbar() {
           <div className="topbar-left">
             <span className="topbar-item">
               <MapPin size={14} className="text-amber" />
-              <span>Nishtar Road, Garden West, Karachi</span>
+              <span>27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd</span>
             </span>
             <span className="topbar-divider">|</span>
             <span className="topbar-item">
               <Clock size={14} className="text-amber" />
-              <span>Mon - Sat: 9:00 AM - 9:00 PM</span>
+              <span>Mon-Fri: 9am-10pm | Sat: 12pm-8pm</span>
             </span>
           </div>
           <div className="topbar-right">
             <a href="tel:03299955575" className="topbar-link">
               <Phone size={14} className="text-amber" />
-              <span>Helpline: <strong>0329-9955575</strong></span>
+              <span>Official No: <strong>0329-9955575</strong></span>
             </a>
           </div>
         </div>
@@ -106,10 +106,10 @@ export default function Navbar() {
               </div>
               <div className="mobile-contact-info">
                 <p className="mobile-contact-item">
-                  <Phone size={16} className="text-amber" /> 0329-9955575
+                  <Phone size={16} className="text-amber" /> 0329-9955575 (Official No)
                 </p>
                 <p className="mobile-contact-item">
-                  <MapPin size={16} className="text-amber" /> Shoe Market, Nishtar Road, Karachi
+                  <MapPin size={16} className="text-amber" /> 27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi
                 </p>
               </div>
             </div>

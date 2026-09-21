@@ -140,41 +140,6 @@ CREATE TABLE IF NOT EXISTS admission_applications (
       </section>
 
       <div className="container admission-form-container">
-        {/* Neon Database Readiness Notice */}
-        <div className="neon-db-notice">
-          <div className="neon-notice-header">
-            <div className="neon-icon-badge">
-              <Database size={20} className="text-amber" />
-            </div>
-            <div className="neon-notice-text">
-              <h4>Neon Database Ready Architecture</h4>
-              <p>
-                This form collects standardized, relational fields prepared for your Neon PostgreSQL serverless database.
-              </p>
-            </div>
-            <button 
-              type="button" 
-              onClick={() => setShowDbSchema(!showDbSchema)}
-              className="btn btn-outline-dark btn-sm"
-            >
-              {showDbSchema ? 'Hide SQL Schema' : 'View Neon SQL Schema'}
-            </button>
-          </div>
-
-          {showDbSchema && (
-            <div className="neon-schema-drawer animate-fade-in">
-              <div className="schema-code-header">
-                <span>SQL Schema for Neon Database</span>
-                <button onClick={copySchemaToClipboard} className="btn-copy-code">
-                  {copiedSchema ? <Check size={14} /> : <Copy size={14} />}
-                  <span>{copiedSchema ? 'Copied!' : 'Copy SQL'}</span>
-                </button>
-              </div>
-              <pre className="schema-code-block">{neonSchemaSQL}</pre>
-            </div>
-          )}
-        </div>
-
         {/* Confirmation Modal / View when submitted */}
         {submittedData ? (
           <div className="submission-success-card animate-fade-in">
@@ -222,7 +187,7 @@ CREATE TABLE IF NOT EXISTS admission_applications (
             <div className="next-steps-callout">
               <h4>Next Steps For Admission Confirmation:</h4>
               <ol>
-                <li>Visit our campus at <strong>27-28, Shoe Market, Al Burhan Arcade, Nishtar Road, Karachi</strong> within 3 working days.</li>
+                <li>Visit our campus at <strong>27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi</strong> within 3 working days.</li>
                 <li>Bring 2 passport-size photographs and a copy of your previous mark sheet / CNIC / B-Form.</li>
                 <li>Present your Reference ID <strong>{submittedData.applicationId}</strong> at the reception desk for enrollment finalization.</li>
               </ol>
@@ -412,20 +377,24 @@ CREATE TABLE IF NOT EXISTS admission_applications (
                     className="form-select"
                   >
                     <option value="">-- Please Select A Course --</option>
-                    <optgroup label="Board Academic Coaching">
-                      <option value="Matriculation (9th & 10th) Science">Matriculation (9th & 10th) Science</option>
-                      <option value="Matriculation (9th & 10th) Commerce">Matriculation (9th & 10th) Commerce</option>
+                    <optgroup label="Academic Classes">
+                      <option value="Class 4 to 8 (All Subjects)">Class 4 to 8 (All Subjects)</option>
+                      <option value="Class 9 and 10 (Science, Commerce, Arts)">Class 9 and 10 (Science, Commerce, Arts)</option>
+                      <option value="Class 11 and 12 (Science, Commerce, Arts)">Class 11 and 12 (Science, Commerce, Arts)</option>
+                      <option value="ADC & ADA Part 1 and 2">ADC & ADA Part 1 and 2</option>
                     </optgroup>
-                    <optgroup label="Information Technology & Software">
-                      <option value="Full-Stack Web Development">Full-Stack Web Development</option>
-                      <option value="Generative AI & Modern Tech">Generative AI & Modern Tech</option>
-                      <option value="Programming Fundamentals (C++ / Python)">Programming Fundamentals (C++ / Python)</option>
+                    <optgroup label="Computer Courses">
+                      <option value="MS Office Automation">MS Office Automation</option>
+                      <option value="Graphics Designing">Graphics Designing</option>
+                      <option value="Web Development">Web Development</option>
+                      <option value="Digital Marketing">Digital Marketing</option>
+                      <option value="AI for Everyone">AI for Everyone</option>
+                      <option value="Advance Excel">Advance Excel</option>
+                      <option value="Peach Tree (Accounting Software)">Peach Tree (Accounting Software)</option>
                     </optgroup>
-                    <optgroup label="Creative & Professional Skills">
-                      <option value="Graphic Designing & Creative Media">Graphic Designing (Photoshop / Illustrator / Canva)</option>
-                      <option value="MS Office Automation & Corporate IT">MS Office Automation</option>
-                      <option value="Digital Marketing & Social Media">Digital Marketing & Social Media</option>
-                      <option value="Spoken English & IELTS Preparation">Spoken English & IELTS Preparation</option>
+                    <optgroup label="English Language Courses">
+                      <option value="English Conversation">English Conversation</option>
+                      <option value="English Language Course">English Language Course</option>
                     </optgroup>
                   </select>
                 </div>
@@ -444,8 +413,8 @@ CREATE TABLE IF NOT EXISTS admission_applications (
                   >
                     <option value="morning">Morning Shift (9:00 AM – 1:00 PM)</option>
                     <option value="afternoon">Afternoon Shift (2:00 PM – 5:00 PM)</option>
-                    <option value="evening">Evening Shift (5:30 PM – 8:30 PM)</option>
-                    <option value="weekend">Weekend Special (Saturday / Sunday)</option>
+                    <option value="evening">Evening Shift (5:00 PM – 10:00 PM)</option>
+                    <option value="saturday">Saturday Special (12:00 PM – 8:00 PM)</option>
                   </select>
                 </div>
               </div>

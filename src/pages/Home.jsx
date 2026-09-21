@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import campusLabImg from '../assets/campus-lab.jpg';
-import awardCeremonyImg from '../assets/award-ceremony.jpg';
+import awardCeremonyImg from '../assets/gallery-7.jpg';
 
 export default function Home() {
   const stats = [
@@ -18,27 +18,27 @@ export default function Home() {
 
   const featuredPrograms = [
     {
-      title: "Matriculation (9th & 10th)",
+      title: "Academic Classes",
       tag: "Academic Coaching",
-      desc: "Specialized coaching for Karachi Board exams with chapter-wise tests, solved past papers, and conceptual lectures.",
+      desc: "Class 4 to 12, Science, Commerce and Arts groups, including ADC Part 1 & 2.",
       link: "/courses"
     },
     {
-      title: "Generative AI & Tech",
-      tag: "Future Tech",
-      desc: "Prompt engineering, LLM integration, Python data tools, and modern AI application workflows for ambitious learners.",
+      title: "Web Development & AI",
+      tag: "Computer Courses",
+      desc: "Comprehensive modern web design and AI for Everyone.",
       link: "/courses"
     },
     {
-      title: "Full-Stack Web Development",
-      tag: "Software Engineering",
-      desc: "Comprehensive modern web design with HTML5, CSS3, JavaScript, React, Node.js, and cloud database integrations.",
+      title: "Graphics Designing",
+      tag: "Computer Courses",
+      desc: "Learn creative visual communication, branding, and asset creation.",
       link: "/courses"
     },
     {
-      title: "English Language & IELTS",
-      tag: "Communication",
-      desc: "Confidence building, accent neutralization, grammar mastery, and systematic test preparation for global success.",
+      title: "English Language Course",
+      tag: "Language",
+      desc: "Confidence building, grammar mastery, and systematic test preparation.",
       link: "/courses"
     }
   ];
@@ -152,7 +152,7 @@ export default function Home() {
               </div>
               <h3 className="feature-title">High-Tech Computer Labs</h3>
               <p className="feature-text">
-                Fully equipped air-conditioned labs with high-speed internet, dedicated workstations, and modern software environments for hands-on learning.
+                Fully equipped well-ventilated labs with high-speed internet, dedicated workstations, and modern software environments for hands-on learning.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export default function Home() {
                 Established over 50 years ago, Shams Commercial Institute has remained steadfast in its mission to deliver quality education accessible to Karachi's ambitious youth.
               </p>
               <p className="about-body">
-                Located conveniently at Nishtar Road near Shoe Market and Bagh-e-Halar Hall, our campus provides a focused, disciplined, and nurturing environment. Whether your goal is securing an A-1 Grade in Matric or learning Generative AI and Web Development, we equip you with real competence.
+                Located conveniently at 27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi, our campus provides a focused, disciplined, and nurturing environment. Whether your goal is securing an A-1 Grade in Matric or learning Generative AI and Web Development, we equip you with real competence.
               </p>
 
               <div className="about-points-list">
@@ -365,7 +365,7 @@ export default function Home() {
                 </Link>
                 <a href="tel:03299955575" className="btn btn-outline btn-cta">
                   <Phone size={18} />
-                  <span>Call: 0329-9955575</span>
+                  <span>Official No: 0329-9955575</span>
                 </a>
               </div>
             </div>

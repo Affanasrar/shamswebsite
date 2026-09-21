@@ -11,148 +11,232 @@ export default function Courses() {
 
   const categories = [
     { id: 'all', label: 'All Programs' },
-    { id: 'academic', label: 'Board Academics' },
-    { id: 'tech', label: 'IT & Software' },
-    { id: 'creative', label: 'Design & Marketing' },
-    { id: 'language', label: 'Language & Skills' }
+    { id: 'academic', label: 'Academic' },
+    { id: 'computer', label: 'Computer Courses' },
+    { id: 'english', label: 'English Language Courses' }
   ];
 
   const courses = [
     {
-      id: "matric-science",
-      title: "Matriculation (9th & 10th) Science",
+      id: "academic-junior",
+      title: "Class 4 to 8 (All Subjects)",
       category: "academic",
-      categoryLabel: "Board Exam Prep",
+      categoryLabel: "Academic",
       duration: "1 Year / Session",
       timing: "Morning & Evening Batches",
-      desc: "Thorough preparation for Sindh Board Karachi SSC Examinations with dedicated subject specialists.",
+      desc: "Strong foundation building in core subjects for junior and middle school students.",
       topics: [
-        "Physics & Chemistry Concept Drills",
-        "Mathematics Problem Solving & Theorems",
-        "Biology / Computer Science Syllabus",
-        "Weekly Grand Test Series & Past Papers",
-        "Mock Board Exams with Exact Paper Pattern"
+        "Mathematics & Science",
+        "English & Urdu",
+        "Social Studies & Islamiat",
+        "Regular Assessments",
+        "Conceptual Learning"
       ],
-      badge: "High Board Distinction Rate"
+      badge: "Foundation"
     },
     {
-      id: "matric-commerce",
-      title: "Matriculation (9th & 10th) Commerce",
+      id: "academic-matric",
+      title: "Class 9 and 10 (Science, Commerce, Arts)",
       category: "academic",
-      categoryLabel: "Board Exam Prep",
+      categoryLabel: "Academic",
       duration: "1 Year / Session",
       timing: "Morning & Evening Batches",
-      desc: "Specialized coaching for commerce students covering principles of accounting, economics, and business math.",
+      desc: "Comprehensive preparation for Karachi Board SSC examinations.",
       topics: [
-        "Principles of Accounting & Bookkeeping",
-        "Commercial Geography & Economics",
-        "Business Mathematics & Statistics",
-        "English & Urdu Compulsory Mastery",
-        "Comprehensive Examination Handouts"
+        "Complete Syllabus Coverage",
+        "Past Paper Practice",
+        "Mock Board Exams",
+        "Doubt Clearing Sessions",
+        "Time Management Strategies"
       ],
-      badge: "Flagship Commerce Coaching"
+      badge: "Board Exam Prep"
     },
     {
-      id: "web-dev",
-      title: "Full-Stack Web Development",
-      category: "tech",
-      categoryLabel: "IT & Software",
-      duration: "6 Months (Hands-on Labs)",
-      timing: "Alternate Days / Weekend Batches",
-      desc: "Master modern web development from semantic HTML & CSS to dynamic React frontends and cloud databases.",
+      id: "academic-inter",
+      title: "Class 11 and 12 (Science, Commerce, Arts)",
+      category: "academic",
+      categoryLabel: "Academic",
+      duration: "1 Year / Session",
+      timing: "Morning & Evening Batches",
+      desc: "Focused coaching for Intermediate HSC Board examinations across all major groups.",
       topics: [
-        "HTML5, CSS3, Modern Flexbox & Grid",
-        "JavaScript (ES6+) & TypeScript Basics",
-        "React.js Component Architecture & Hooks",
-        "Node.js, Express & RESTful APIs",
-        "Neon PostgreSQL / Database Integration & Deployment"
+        "Pre-Engineering & Pre-Medical",
+        "Commerce (I.Com) & Humanities",
+        "Extensive Test Sessions",
+        "Career Guidance",
+        "Top Faculties"
       ],
-      badge: "Most In-Demand Skill"
+      badge: "College Prep"
     },
     {
-      id: "gen-ai",
-      title: "Generative AI & Modern Tech",
-      category: "tech",
-      categoryLabel: "Advanced IT",
-      duration: "3 Months (Intensive)",
-      timing: "Evening & Weekend Batches",
-      desc: "Step into the cutting-edge era of Artificial Intelligence. Learn prompt engineering and AI workflow automation.",
+      id: "academic-degree",
+      title: "ADC & ADA Part 1 and 2",
+      category: "academic",
+      categoryLabel: "Academic",
+      duration: "1 Year / Session",
+      timing: "Morning & Evening Batches",
+      desc: "Degree level coaching for Associate Degree in Commerce (ADC) and Associate Degree in Arts (ADA).",
       topics: [
-        "Foundations of Machine Learning & LLMs",
-        "Prompt Engineering for Developers & Creators",
-        "Python for AI & Data Analysis",
-        "OpenAI & Gemini API Integration",
-        "Building Practical AI Automation Agents"
+        "Advanced Accounting & Finance",
+        "Business Economics & Law",
+        "Humanities Subjects",
+        "Exam-Oriented Preparation",
+        "University Level Guidance"
       ],
-      badge: "Future-Ready Program"
-    },
-    {
-      id: "graphic-design",
-      title: "Graphic Designing & Creative Media",
-      category: "creative",
-      categoryLabel: "Creative Design",
-      duration: "4 Months",
-      timing: "Flexible Slots",
-      desc: "Learn creative visual communication, branding, typography, and professional asset creation for freelance and studio work.",
-      topics: [
-        "Adobe Photoshop Photo Editing & Compositing",
-        "Adobe Illustrator Vector & Logo Design",
-        "Canva Pro for Social Media & Marketing Kits",
-        "UI/UX Fundamentals & Typography",
-        "Portfolio Creation & Freelancing Guidance"
-      ],
-      badge: "Freelance Practical Skill"
+      badge: "Degree Coaching"
     },
     {
       id: "ms-office",
-      title: "MS Office Automation & Corporate IT",
-      category: "creative",
-      categoryLabel: "Vocational Skills",
-      duration: "2 Months",
+      title: "MS Office Automation",
+      category: "computer",
+      categoryLabel: "Computer Courses",
+      duration: "3 Months",
       timing: "Daily 1 Hour Batches",
       desc: "Essential computer literacy and office automation skills required by every professional office and administrative role.",
       topics: [
-        "MS Word Professional Document Formatting",
-        "MS Excel Formulas, Pivot Tables & Data Analysis",
-        "MS PowerPoint Pitch Decks & Presentations",
-        "InPage Urdu Typing & Official Correspondence",
-        "Cloud Storage & Email Communication"
+        "MS Word Document Formatting",
+        "MS Excel Basics",
+        "MS PowerPoint Presentations",
+        "InPage Urdu Typing",
+        "Internet & Email Basics"
       ],
-      badge: "Essential Career Baseline"
+      badge: "Essential Skill"
     },
     {
-      id: "english-ielts",
-      title: "Spoken English & IELTS Preparation",
-      category: "language",
-      categoryLabel: "Language & Communication",
+      id: "graphic-design",
+      title: "Graphics Designing",
+      category: "computer",
+      categoryLabel: "Computer Courses",
       duration: "3 Months",
-      timing: "Morning & Evening Sessions",
-      desc: "Overcome hesitation, master fluent spoken English, improve accent, and prepare for international IELTS examinations.",
+      timing: "Flexible Slots",
+      desc: "Learn creative visual communication, branding, typography, and professional asset creation.",
       topics: [
-        "Daily Conversation Drills & Accent Neutralization",
-        "Grammar In Use & Vocabulary Expansion",
-        "IELTS Listening, Reading, Writing & Speaking",
-        "Public Speaking, Presentations & Debates",
-        "Interview Preparation & Soft Skills"
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Canva Pro",
+        "UI/UX Fundamentals",
+        "Portfolio Creation"
       ],
-      badge: "Confidence Building"
+      badge: "Creative Design"
+    },
+    {
+      id: "web-dev",
+      title: "Web Development",
+      category: "computer",
+      categoryLabel: "Computer Courses",
+      duration: "6 Months",
+      timing: "Alternate Days Batches",
+      desc: "Master modern web development from semantic HTML & CSS to dynamic interactive frontends.",
+      topics: [
+        "HTML5 & CSS3",
+        "JavaScript Fundamentals",
+        "Responsive Web Design",
+        "React.js Basics",
+        "Hosting & Deployment"
+      ],
+      badge: "High Demand"
     },
     {
       id: "digital-marketing",
-      title: "Digital Marketing & Social Media",
-      category: "creative",
-      categoryLabel: "Business & Growth",
-      duration: "3 Months",
+      title: "Digital Marketing",
+      category: "computer",
+      categoryLabel: "Computer Courses",
+      duration: "2 Months",
       timing: "Evening Sessions",
-      desc: "Learn how to build brands, execute paid ad campaigns, generate leads, and run e-commerce marketing funnels.",
+      desc: "Learn how to build brands, execute paid ad campaigns, and run marketing funnels.",
       topics: [
-        "Meta Ads (Facebook & Instagram Marketing)",
-        "Search Engine Optimization (SEO Fundamentals)",
-        "Content Marketing & Copywriting",
-        "Google Ads & Web Analytics",
-        "E-Commerce Store Setup & Client Acquisition"
+        "Social Media Marketing",
+        "Search Engine Optimization (SEO)",
+        "Content Marketing",
+        "Google Ads",
+        "Lead Generation"
       ],
-      badge: "High ROI Skill"
+      badge: "Business Growth"
+    },
+    {
+      id: "ai-everyone",
+      title: "AI for Everyone",
+      category: "computer",
+      categoryLabel: "Computer Courses",
+      duration: "3 Months",
+      timing: "Weekend Batches",
+      desc: "Step into the cutting-edge era of Artificial Intelligence. Learn how to use AI tools for daily productivity.",
+      topics: [
+        "Introduction to Generative AI",
+        "Prompt Engineering",
+        "ChatGPT & Gemini Workflows",
+        "AI Image Generation",
+        "AI for Productivity"
+      ],
+      badge: "Future Ready"
+    },
+    {
+      id: "advance-excel",
+      title: "Advance Excel",
+      category: "computer",
+      categoryLabel: "Computer Courses",
+      duration: "1 Month",
+      timing: "Evening Sessions",
+      desc: "Master complex data analysis, pivot tables, and advanced formulas in Microsoft Excel.",
+      topics: [
+        "Advanced Formulas & Functions",
+        "Data Validation & Formatting",
+        "Pivot Tables & Charts",
+        "Macros Fundamentals",
+        "Data Analysis Techniques"
+      ],
+      badge: "Data Mastery"
+    },
+    {
+      id: "peach-tree",
+      title: "Peach Tree (Accounting Software)",
+      category: "computer",
+      categoryLabel: "Computer Courses",
+      duration: "1 Month",
+      timing: "Morning & Evening Sessions",
+      desc: "Learn professional computerized accounting with Sage 50 (Peachtree).",
+      topics: [
+        "Company Setup & Chart of Accounts",
+        "General Ledger & Journal Entries",
+        "Accounts Payable & Receivable",
+        "Inventory Management",
+        "Financial Reporting"
+      ],
+      badge: "Accounting Pro"
+    },
+    {
+      id: "english-conversation",
+      title: "English Conversation",
+      category: "english",
+      categoryLabel: "English Language Courses",
+      duration: "3 Months",
+      timing: "Morning & Evening Sessions",
+      desc: "Focus entirely on spoken English, fluency, and overcoming hesitation in daily interactions.",
+      topics: [
+        "Daily Conversation Drills",
+        "Accent & Pronunciation",
+        "Group Discussions",
+        "Public Speaking",
+        "Confidence Building"
+      ],
+      badge: "Spoken English"
+    },
+    {
+      id: "english-language-comprehensive",
+      title: "English Language Course",
+      category: "english",
+      categoryLabel: "English Language Courses",
+      duration: "6 Months",
+      timing: "Morning & Evening Sessions",
+      desc: "A comprehensive journey through English grammar, reading, writing, and speaking.",
+      topics: [
+        "Grammar In Use",
+        "Vocabulary Expansion",
+        "Reading Comprehension",
+        "Creative Writing",
+        "Interview Preparation"
+      ],
+      badge: "Comprehensive"
     }
   ];
 
