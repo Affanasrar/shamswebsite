@@ -19,10 +19,10 @@ export default function Navbar() {
       <div className="header-topbar">
         <div className="container topbar-content">
           <div className="topbar-left">
-            <span className="topbar-item">
+            <a href="https://maps.google.com/?q=27-28,+Shoe+Market,+Al+Burhan+Arcade,+Nishtar+Rd,+near+Bagh-e-Halar+Hall,+Garden+West,+Karachi" target="_blank" rel="noopener noreferrer" className="topbar-item" style={{ textDecoration: 'none', color: 'inherit' }}>
               <MapPin size={14} className="text-amber" />
-              <span>27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd</span>
-            </span>
+              <span className="hover:underline" style={{ transition: 'color 0.2s', cursor: 'pointer' }} onMouseOver={(e) => e.target.style.color = '#f59e0b'} onMouseOut={(e) => e.target.style.color = 'inherit'}>27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd</span>
+            </a>
             <span className="topbar-divider">|</span>
             <span className="topbar-item">
               <Clock size={14} className="text-amber" />
@@ -108,9 +108,9 @@ export default function Navbar() {
                 <p className="mobile-contact-item">
                   <Phone size={16} className="text-amber" /> 0329-9955575 (Official No)
                 </p>
-                <p className="mobile-contact-item">
-                  <MapPin size={16} className="text-amber" /> 27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi
-                </p>
+                <a href="https://maps.google.com/?q=27-28,+Shoe+Market,+Al+Burhan+Arcade,+Nishtar+Rd,+near+Bagh-e-Halar+Hall,+Garden+West,+Karachi" target="_blank" rel="noopener noreferrer" className="mobile-contact-item" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+                  <MapPin size={16} className="text-amber" style={{ flexShrink: 0, marginTop: '3px' }} /> <span style={{ textDecoration: 'underline' }}>27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi</span>
+                </a>
               </div>
             </div>
           </div>

@@ -187,7 +187,7 @@ CREATE TABLE IF NOT EXISTS admission_applications (
             <div className="next-steps-callout">
               <h4>Next Steps For Admission Confirmation:</h4>
               <ol>
-                <li>Visit our campus at <strong>27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi</strong> within 3 working days.</li>
+                <li>Visit our campus at <strong><a href="https://maps.google.com/?q=27-28,+Shoe+Market,+Al+Burhan+Arcade,+Nishtar+Rd,+near+Bagh-e-Halar+Hall,+Garden+West,+Karachi" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: '#f59e0b' }}>27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi</a></strong> within 3 working days.</li>
                 <li>Bring 2 passport-size photographs and a copy of your previous mark sheet / CNIC / B-Form.</li>
                 <li>Present your Reference ID <strong>{submittedData.applicationId}</strong> at the reception desk for enrollment finalization.</li>
               </ol>

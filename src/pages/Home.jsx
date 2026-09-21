@@ -180,7 +180,7 @@ export default function Home() {
                 Established over 50 years ago, Shams Commercial Institute has remained steadfast in its mission to deliver quality education accessible to Karachi's ambitious youth.
               </p>
               <p className="about-body">
-                Located conveniently at 27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi, our campus provides a focused, disciplined, and nurturing environment. Whether your goal is securing an A-1 Grade in Matric or learning Generative AI and Web Development, we equip you with real competence.
+                Located conveniently at <a href="https://maps.google.com/?q=27-28,+Shoe+Market,+Al+Burhan+Arcade,+Nishtar+Rd,+near+Bagh-e-Halar+Hall,+Garden+West,+Karachi" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: '#f59e0b' }}>27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi</a>, our campus provides a focused, disciplined, and nurturing environment. Whether your goal is securing an A-1 Grade in Matric or learning Generative AI and Web Development, we equip you with real competence.
               </p>
 
               <div className="about-points-list">

@@ -88,8 +88,10 @@ export default function Footer() {
             <h4 className="footer-heading">Visit Our Campus</h4>
             <ul className="footer-contact-list">
               <li className="footer-contact-item">
-                <MapPin size={20} className="footer-contact-icon text-amber" />
-                <span>27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi</span>
+                <MapPin size={20} className="footer-contact-icon text-amber" style={{ flexShrink: 0 }} />
+                <a href="https://maps.google.com/?q=27-28,+Shoe+Market,+Al+Burhan+Arcade,+Nishtar+Rd,+near+Bagh-e-Halar+Hall,+Garden+West,+Karachi" target="_blank" rel="noopener noreferrer" className="footer-contact-link" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <span className="hover:underline" style={{ transition: 'color 0.2s', cursor: 'pointer' }} onMouseOver={(e) => e.target.style.color = '#f59e0b'} onMouseOut={(e) => e.target.style.color = 'inherit'}>27-28, Shoe Market, Al Burhan Arcade, Nishtar Rd, near Bagh-e-Halar Hall, Garden West, Karachi</span>
+                </a>
               </li>
               <li className="footer-contact-item">
                 <Phone size={20} className="footer-contact-icon text-amber" />
